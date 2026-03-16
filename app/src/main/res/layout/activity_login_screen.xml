@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".LoginScreen">
+
+    <ImageView
+        android:id="@+id/login_img_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="LOGIN SCREEN"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@id/login_img_icon"
+        app:layout_constraintStart_toStartOf="@id/login_img_icon"
+        app:layout_constraintTop_toBottomOf="@id/login_img_icon" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your email"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:id="@+id/login_space"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_email" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/login_space">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            tools:text="Vassilis"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_login"
+        style="?attr/materialButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:minWidth="120dp"
+        android:text="@string/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn_forgot_pass" />
+
+    <Button
+        android:id="@+id/login_btn_register"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_btn_login" />
+
+    <ImageView
+        android:id="@+id/login_img_social"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_mail"
+        app:layout_constraintBottom_toTopOf="@id/login_txt_privacy_policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_btn_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with social media"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/login_img_social"
+        app:layout_constraintStart_toStartOf="@id/login_img_social"
+        app:layout_constraintTop_toBottomOf="@id/login_img_social" />
+
+    <Button
+        android:id="@+id/login_btn_forgot_pass"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_pass" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_txt_privacy_policy"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="LINK FOR PRIVACY POLICY"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

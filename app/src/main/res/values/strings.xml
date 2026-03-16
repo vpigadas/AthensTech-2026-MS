@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">AthensTech-2026-MS</string>
+    <string name="dev_name">Vassilis Pigadas</string>
+    <string name="login_button">Login</string>
+</resources>
