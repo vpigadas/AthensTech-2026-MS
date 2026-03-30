@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import gr.athenstech.ms.databinding.ActivityMainBinding;
 import gr.athenstech.ms.network.NetworkActivity;
+import gr.athenstech.ms.sample.SampleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, NetworkActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.mainBtnSample.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SampleActivity.class);
                 startActivity(intent);
             }
         });
