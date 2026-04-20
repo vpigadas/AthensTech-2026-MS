@@ -8,6 +8,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import gr.athenstech.ms.databinding.ActivityMainBinding;
+import gr.athenstech.ms.list.RecyclerViewActivity;
 import gr.athenstech.ms.network.NetworkActivity;
 import gr.athenstech.ms.sample.SampleActivity;
 
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
                 setResult(3000, intent);
                 finish();
+            }
+        });
+
+        binding.mainBtnRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
             }
         });
     }
