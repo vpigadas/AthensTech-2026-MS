@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AthensTech2026MS">
         <activity
+            android:name=".storage.database.DatabaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".storage.StorageActivity"
             android:exported="false" />
         <activity

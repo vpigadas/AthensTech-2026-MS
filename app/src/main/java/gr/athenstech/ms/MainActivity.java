@@ -11,6 +11,7 @@ import gr.athenstech.ms.databinding.ActivityMainBinding;
 import gr.athenstech.ms.list.RecyclerViewActivity;
 import gr.athenstech.ms.network.NetworkActivity;
 import gr.athenstech.ms.sample.SampleActivity;
+import gr.athenstech.ms.storage.database.DatabaseActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.mainBtnDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
                 startActivity(intent);
             }
         });

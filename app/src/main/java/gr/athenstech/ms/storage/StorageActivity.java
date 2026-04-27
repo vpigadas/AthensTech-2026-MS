@@ -25,3 +25,4 @@ public class StorageActivity extends AppCompatActivity {
         sharedPreferences.edit().putString("username","john_doe").commit();
     }
 }
+
