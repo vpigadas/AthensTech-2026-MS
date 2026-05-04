@@ -2,4 +2,6 @@
     <string name="app_name" translatable="false">AthensTech-2026-MS</string>
     <string name="dev_name">Vassilis Pigadas</string>
     <string name="login_button">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

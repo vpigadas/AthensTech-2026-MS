@@ -8,6 +8,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import gr.athenstech.ms.databinding.ActivityMainBinding;
+import gr.athenstech.ms.fragment.CustomFragmentActivity;
 import gr.athenstech.ms.list.RecyclerViewActivity;
 import gr.athenstech.ms.network.NetworkActivity;
 import gr.athenstech.ms.sample.SampleActivity;
@@ -74,6 +75,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.mainBtnFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CustomFragmentActivity.class);
                 startActivity(intent);
             }
         });

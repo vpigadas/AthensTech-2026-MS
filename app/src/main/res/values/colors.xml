@@ -5,4 +5,6 @@
     <color name="red">#FF0000</color>
     <color name="green">#FF00FF00</color>
     <color name="blue">#FF0000FF</color>
+    <color name="red_light">#EF9A9A</color>
+    <color name="blue_light">#90CAF9</color>
 </resources>
