@@ -22,7 +22,9 @@ public class StorageActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("user_data",MODE_PRIVATE);
 
         sharedPreferences.edit().putString("username","john_doe").apply();
+
         sharedPreferences.edit().putString("username","john_doe").commit();
+
     }
 }
 

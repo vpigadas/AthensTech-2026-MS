@@ -13,6 +13,7 @@ import gr.athenstech.ms.list.RecyclerViewActivity;
 import gr.athenstech.ms.network.NetworkActivity;
 import gr.athenstech.ms.sample.SampleActivity;
 import gr.athenstech.ms.storage.database.DatabaseActivity;
+import gr.athenstech.ms.viewmodel.CustomViewModelActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -84,7 +85,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CustomFragmentActivity.class);
                 startActivity(intent);
+
+            }
+        });
+
+        binding.mainBtnViewmodel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CustomViewModelActivity.class);
+                startActivity(intent);
             }
         });
     }
 }
+

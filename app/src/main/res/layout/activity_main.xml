@@ -21,6 +21,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+
+    <Button
+        android:id="@+id/main_btn_viewmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viewmodel Screen"/>
+
     <Button
         android:id="@+id/main_btn_fragment"
         android:layout_width="match_parent"
@@ -55,6 +62,7 @@
         android:id="@+id/main_btn_close"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CLOSE"/>
+        tools:text="FINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISHFINISH"
+        android:text="Close"/>
 
 </LinearLayout>
